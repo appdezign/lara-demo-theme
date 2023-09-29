@@ -17,9 +17,9 @@ class LaraDemoServiceProvider extends ServiceProvider
 
 		// Publish Assets
 		$this->publishes([
-			__DIR__.'/../_assets/_public/fonts' => public_path('assets/themes/demofive/fonts'),
-			__DIR__.'/../_assets/_public/images' => public_path('assets/themes/demofive/images'),
-			__DIR__.'/../_assets/_public/vendor' => public_path('assets/themes/demofive/js/vendor'),
+			__DIR__.'/../_assets/_public/fonts' => public_path('assets/themes/demo/fonts'),
+			__DIR__.'/../_assets/_public/images' => public_path('assets/themes/demo/images'),
+			__DIR__.'/../_assets/_public/vendor' => public_path('assets/themes/demo/js/vendor'),
 		], 'lara');
 
 	}
