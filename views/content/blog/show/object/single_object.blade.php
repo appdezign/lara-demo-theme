@@ -40,7 +40,7 @@
 {{-- FEATURED IMAGE --}}
 @if($data->object->hasFeatured() && !$data->object->heroIsFeatured())
 	<figure class="mb-40">
-		@include('_img.lazy', ['lzobj' => $data->object->featured, 'lzw' => 1280, 'lzh' => 640, 'ar' => '2by1', 'fc' => false])
+		@include('_img.lazy', ['lzobj' => $data->object->featured, 'lzw' => 1280, 'lzh' => 640, 'ar' => '2x1', 'fc' => false])
 	</figure>
 @endif
 
