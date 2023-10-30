@@ -18,7 +18,7 @@
 
 {{-- FEATURED VIDEO --}}
 @if($data->object->hasVideofiles())
-	<div class="ratio ratio-16x9 mt-40 mb-40">
+	<div class="ratio ratio-16x9 mt-48 mb-48">
 		<video controls>
 			@if($data->object->publish == 1)
 				<source src="{{ $entity->getUrlForVideos().'/' . $data->object->videofile->filename }}"
@@ -30,7 +30,7 @@
 		</video>
 	</div>
 @elseif($data->object->hasVideos())
-	<div class="ratio ratio-16x9 mt-40 mb-40">
+	<div class="ratio ratio-16x9 mt-48 mb-48">
 		<iframe width="560" height="315"
 		        src="https://www.youtube.com/embed/{{ $data->object->video->youtubecode }}?rel=0"
 		        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -39,7 +39,7 @@
 
 {{-- FEATURED IMAGE --}}
 @if($data->object->hasFeatured() && !$data->object->heroIsFeatured())
-	<figure class="mb-40">
+	<figure class="mb-48">
 		@include('_img.lazy', ['lzobj' => $data->object->featured, 'lzw' => 1280, 'lzh' => 640, 'ar' => '2x1', 'fc' => false])
 	</figure>
 @endif
