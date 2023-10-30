@@ -1,4 +1,4 @@
-<article class="card border-0 shadow-sm overflow-hidden mb-32">
+<article class="card border-0 shadow-sm overflow-hidden mb-36">
 	<div class="row g-0">
 
 		@if($entity->hasImages() || $entity->hasVideos())
