@@ -1,4 +1,8 @@
-//
-// user.scss
-// Use this to write your custom SCSS
-//
+@import 'custom/general';
+@import 'custom/typography';
+
+@import 'custom/header';
+@import 'custom/navbar';
+@import 'custom/footer';
+
+@import 'custom/home';
